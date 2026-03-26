@@ -1,9 +1,7 @@
 from rest_framework.generics import CreateAPIView, UpdateAPIView
 from rest_framework.permissions import AllowAny, IsAuthenticated
-from rest_framework.response import Response
-from rest_framework.views import APIView
 
-from .serializers import UserSerializer, TelegramSerializer
+from .serializers import TelegramSerializer, UserSerializer
 
 
 class RegisterAPIView(CreateAPIView):
